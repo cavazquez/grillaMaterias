@@ -1,0 +1,58 @@
+/* Estilos personalizados adicionales */
+
+/* Mejora el espaciado en dispositivos móviles */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    th, td {
+        padding: 0.5rem 0.25rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* Mejora la legibilidad de las filas */
+tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+/* Estilo para el hover en filas */
+tr:hover {
+    background-color: #f3f4f6 !important;
+    transition: background-color 0.2s ease;
+}
+
+/* Estilo para el campo de búsqueda */
+#searchInput {
+    transition: all 0.3s ease;
+}
+
+#searchInput:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Estilo para los selectores de filtro */
+select:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Mejora el scroll horizontal en móviles */
+.overflow-x-auto {
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Ajustes para tablas responsivas */
+table {
+    min-width: 640px; /* Ancho mínimo para evitar que se comprima demasiado */
+}
+
+/* Estilo para el encabezado de la tabla */
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f9fafb;
+    z-index: 10;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
+}
